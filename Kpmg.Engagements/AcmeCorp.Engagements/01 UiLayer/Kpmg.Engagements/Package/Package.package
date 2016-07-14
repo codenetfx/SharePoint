@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9e11d119-1c15-4fc7-9a0c-dbb17a78abf2" solutionId="9e11d119-1c15-4fc7-9a0c-dbb17a78abf2" resetWebServer="false" sharePointProductVersion="15.0" name="AcmeCorp.Engagements" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="AcmeCorp.Engagements.EngagementsApi.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\02 BusinessLayer\EngagementsApi\EngagementsApi.csproj">
+      <safeControls>
+        <safeControl namespaceName="AcmeCorp.Engagements" typeName="*" isSafeAgainstScript="true" />
+      </safeControls>
+    </projectOutputAssembly>
+    <projectOutputAssembly location="AcmeCorp.Engagements.EngagementsDomain.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\02 BusinessLayer\EngagementsDomain\EngagementsDomain.csproj" />
+    <projectOutputAssembly location="AcmeCorp.Engagements.EngagementsSharePointDataAccess.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\03 DataAccessLayer\EngagementsSharePointDataAccess\EngagementsSharePointDataAccess.csproj" />
+    <projectOutputAssembly location="Acme.Core.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\..\Acme.Core\Acme.Core\Acme.Core.csproj">
+      <safeControls>
+        <safeControl namespaceName="Acme.Core" typeName="*" isSafeAgainstScript="true" />
+      </safeControls>
+    </projectOutputAssembly>
+    <projectOutputAssembly location="Acme.SharePointCore.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\..\Acme.Core\Acme.SharePointCore\Acme.SharePointCore.csproj">
+      <safeControls>
+        <safeControl namespaceName="Acme.SharePointCore" typeName="*" isSafeAgainstScript="true" />
+      </safeControls>
+    </projectOutputAssembly>
+    <projectOutputAssembly location="Acme.Core.MultiLanguageDb.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\..\Acme.Core\Acme.Core.MultiLanguageDb\Acme.Core.MultiLanguageDb.csproj" />
+    <projectOutputAssembly location="ApiFactory.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\UiHelpers\ApiFactory\ApiFactory.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="ba8dfc7f-f09b-4cbe-98f1-face4e3d20f9" />
+    <featureReference itemId="f5e036cc-9c0e-44c5-9e5a-15bf86f9ca15" />
+    <featureReference itemId="122c42c7-9d3f-401c-943d-3538bcaf3a72" />
+    <featureReference itemId="90a05651-7eba-4bfc-8716-e7fc63c26869" />
+    <featureReference itemId="47550983-2619-483d-8792-945673aa96de" />
+    <featureReference itemId="99b3a4f9-3165-4152-a3be-e9e324bf37ab" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="7f617e7b-c247-4162-833f-1e0d2f607194" />
+  </projectItems>
+</package>

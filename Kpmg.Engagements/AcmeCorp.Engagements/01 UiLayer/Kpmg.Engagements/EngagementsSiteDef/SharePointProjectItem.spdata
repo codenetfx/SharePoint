@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.SiteDefinition" DefaultFile="onet.xml" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Package" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="default.aspx" Target="SiteTemplates\EngagementsSiteDef\" Type="TemplateFile" />
+    <ProjectItemFile Source="onet.xml" Target="SiteTemplates\EngagementsSiteDef\Xml\" Type="TemplateFile" />
+    <ProjectItemFile Source="1033\webtemp_EngagementsSiteDef.xml" Target="1033\xml\" Type="TemplateFile" />
+    <ProjectItemFile Source="200px-AcmeCorp_svg.png" Target="SiteTemplates\EngagementsSiteDef\" Type="TemplateFile" />
+    <ProjectItemFile Source="1031\webtemp_EngagementsSiteDef.xml" Target="1031\xmlf\" Type="TemplateFile" />
+  </Files>
+</ProjectItem>

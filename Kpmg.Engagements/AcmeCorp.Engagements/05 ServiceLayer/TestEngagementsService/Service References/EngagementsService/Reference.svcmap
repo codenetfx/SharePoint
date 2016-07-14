@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="31b09a17-ded2-45f9-9409-cf26f7a954d7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://dev-sp.devsp.int:801/EngagementsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EngagementsService4.xsd" MetadataType="Schema" ID="cf6353b2-89e4-4290-8335-a808108afc70" SourceId="1" SourceUrl="http://dev-sp.devsp.int:801/EngagementsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EngagementsService41.xsd" MetadataType="Schema" ID="6634f1ea-de93-47f5-8ffe-670d945ba9a3" SourceId="1" SourceUrl="http://dev-sp.devsp.int:801/EngagementsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EngagementsService1.wsdl" MetadataType="Wsdl" ID="d775cc5f-9b9a-4907-b37e-8d95ee2208c9" SourceId="1" SourceUrl="http://dev-sp.devsp.int:801/EngagementsService.svc?wsdl" />
+    <MetadataFile FileName="EngagementsService1.disco" MetadataType="Disco" ID="463a9c1e-972b-4973-82e1-536cc676e266" SourceId="1" SourceUrl="http://dev-sp.devsp.int:801/EngagementsService.svc?disco" />
+    <MetadataFile FileName="EngagementsService42.xsd" MetadataType="Schema" ID="e2873e2f-e5da-4e64-850a-766c7b5afb47" SourceId="1" SourceUrl="http://dev-sp.devsp.int:801/EngagementsService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EngagementsService43.xsd" MetadataType="Schema" ID="2ad01d6c-53bf-4840-8426-e708b4e1e9e2" SourceId="1" SourceUrl="http://dev-sp.devsp.int:801/EngagementsService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

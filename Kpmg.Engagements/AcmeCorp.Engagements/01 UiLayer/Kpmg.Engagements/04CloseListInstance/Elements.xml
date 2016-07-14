@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Engagement" OnQuickLaunch="FALSE" TemplateType="10000" FeatureId="659d5a3f-b682-4f82-b03e-3cf2f481547d" Url="Lists/Engagement" Description="Close Phase List Instance"></ListInstance>
+</Elements>

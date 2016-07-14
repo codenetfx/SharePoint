@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="939fc136-9622-4eee-9ea5-35c3f328a515" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="PGDCustomListForms1.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="PGDCustomListForms1_VacationRequestListForms\Feature.xml" />
+  </FeatureManifests>
+</Solution>

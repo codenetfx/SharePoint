@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SourcingInitiatorList" OnQuickLaunch="TRUE" TemplateType="100" Url="Lists/SourcingInitiatorList" Description="Sourcing Initiator List Instance">
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="RequestID">1</Field>
+          <Field Name="ProjectName">Project 1111-0 Description</Field>
+          <Field Name="Scope">Scope 1111-0 </Field>
+          <Field Name="SupplierList">Supplier 1111-0</Field>
+          <Field Name="Status">Draft</Field>
+          <Field Name="ProjectStart">2014-12-30T21:00:00Z</Field>
+          <Field Name="Basket">Basket 1111-0</Field>
+          <Field Name="Category">Category 1111-0</Field>
+          <Field Name="CategoryType">CatType</Field>
+          <Field Name="BU">BusinessUnit</Field>
+          <Field Name="SubBU">SubBusinessUnit</Field>
+          <Field Name="PlannedProject">TRUE</Field>
+          <Field Name="LastModifiedBy">sdobric</Field>
+          <Field Name="BiddingStart">2014-12-30T21:00:00Z</Field>
+          <Field Name="BiddingType">Bidding Type1</Field>
+          <Field Name="TotalProjectSpendBUs">0</Field>
+          <Field Name="TotalProjectSpendRegions">0</Field>
+          <Field Name="TotalProjectSpendBUA">0</Field>
+          <Field Name="TotalProjectSpendBUB">0</Field>
+          <Field Name="TotalProjectSpendBUL">0</Field>
+          <Field Name="TotalProjectSpendforAP">0</Field>
+          <Field Name="TotalProjectSpendforCE">0</Field>
+          <Field Name="TotalProjectSpendforCIS">0</Field>
+          <Field Name="TotalProjectSpendforIMEA">0</Field>
+          <Field Name="TotalProjectSpendforLAN">0</Field>
+          <Field Name="TotalProjectSpendforLAS">0</Field>
+          <Field Name="TotalProjectSpendforNA">0</Field>
+          <Field Name="TotalProjectSpendforWE">0</Field>
+          <Field Name="ExceptionCountry">0</Field>
+          <Field Name="AddressableSpend">0</Field>
+          <Field Name="AuctionableSpend">0</Field>
+        </Row>
+        <Row>
+          <Field Name="RequestID">2</Field>
+          <Field Name="ProjectName">Project 2222-0 Description</Field>
+          <Field Name="Scope">Scope 2222-0 </Field>
+          <Field Name="SupplierList">Supplier 2222-0</Field>
+          <Field Name="Status">Ready</Field>
+          <Field Name="ProjectStart">2014-12-30T21:00:00Z</Field>
+          <Field Name="Basket">Basket 2222-0</Field>
+          <Field Name="Category">Category 2222-0</Field>
+          <Field Name="CategoryType">CatType</Field>
+          <Field Name="BU">BusinessUnit</Field>
+          <Field Name="SubBU">SubBusinessUnit</Field>
+          <Field Name="PlannedProject">TRUE</Field>
+          <Field Name="LastModifiedBy">sdobric</Field>
+          <Field Name="BiddingStart">2014-12-30T21:00:00Z</Field>
+          <Field Name="BiddingType">Bidding Type1</Field>
+          <Field Name="TotalProjectSpendBUs">0</Field>
+          <Field Name="TotalProjectSpendRegions">0</Field>
+          <Field Name="TotalProjectSpendBUA">0</Field>
+          <Field Name="TotalProjectSpendBUB">0</Field>
+          <Field Name="TotalProjectSpendBUL">0</Field>
+          <Field Name="TotalProjectSpendforAP">0</Field>
+          <Field Name="TotalProjectSpendforCE">0</Field>
+          <Field Name="TotalProjectSpendforCIS">0</Field>
+          <Field Name="TotalProjectSpendforIMEA">0</Field>
+          <Field Name="TotalProjectSpendforLAN">0</Field>
+          <Field Name="TotalProjectSpendforLAS">0</Field>
+          <Field Name="TotalProjectSpendforNA">0</Field>
+          <Field Name="TotalProjectSpendforWE">0</Field>
+          <Field Name="ExceptionCountry">0</Field>
+          <Field Name="AddressableSpend">0</Field>
+          <Field Name="AuctionableSpend">0</Field>
+        </Row>
+        <Row>
+          <Field Name="RequestID">3</Field>
+          <Field Name="ProjectName">Project 3333-0 Description</Field>
+          <Field Name="Scope">Scope 3333-0 </Field>
+          <Field Name="SupplierList">Supplier 3333-0</Field>
+          <Field Name="Status">Ready</Field>
+          <Field Name="ProjectStart">2014-12-30T21:00:00Z</Field>
+          <Field Name="Basket">Basket 3333-0</Field>
+          <Field Name="Category">Category 3333-0</Field>
+          <Field Name="CategoryType">CatType</Field>
+          <Field Name="BU">BusinessUnit</Field>
+          <Field Name="SubBU">SubBusinessUnit</Field>
+          <Field Name="PlannedProject">TRUE</Field>
+          <Field Name="LastModifiedBy">sdobric</Field>
+          <Field Name="BiddingStart">2014-12-30T21:00:00Z</Field>
+          <Field Name="BiddingType">Bidding Type1</Field>
+          <Field Name="TotalProjectSpendBUs">0</Field>
+          <Field Name="TotalProjectSpendRegions">0</Field>
+          <Field Name="TotalProjectSpendBUA">0</Field>
+          <Field Name="TotalProjectSpendBUB">0</Field>
+          <Field Name="TotalProjectSpendBUL">0</Field>
+          <Field Name="TotalProjectSpendforAP">0</Field>
+          <Field Name="TotalProjectSpendforCE">0</Field>
+          <Field Name="TotalProjectSpendforCIS">0</Field>
+          <Field Name="TotalProjectSpendforIMEA">0</Field>
+          <Field Name="TotalProjectSpendforLAN">0</Field>
+          <Field Name="TotalProjectSpendforLAS">0</Field>
+          <Field Name="TotalProjectSpendforNA">0</Field>
+          <Field Name="TotalProjectSpendforWE">0</Field>
+          <Field Name="ExceptionCountry">0</Field>
+          <Field Name="AddressableSpend">0</Field>
+          <Field Name="AuctionableSpend">0</Field>
+        </Row>
+        <Row>
+          <Field Name="RequestID">4</Field>
+          <Field Name="ProjectName">Project 4444-0 Description</Field>
+          <Field Name="Scope">Scope 4444-0 </Field>
+          <Field Name="SupplierList">Supplier 4444-0</Field>
+          <Field Name="Status">Draft</Field>
+          <Field Name="ProjectStart">2014-12-30T21:00:00Z</Field>
+          <Field Name="Basket">Basket 4444-0</Field>
+          <Field Name="Category">Category 4444-0</Field>
+          <Field Name="CategoryType">CatType</Field>
+          <Field Name="BU">BusinessUnit</Field>
+          <Field Name="SubBU">SubBusinessUnit</Field>
+          <Field Name="PlannedProject">TRUE</Field>
+          <Field Name="LastModifiedBy">sdobric</Field>
+          <Field Name="BiddingStart">2014-12-30T21:00:00Z</Field>
+          <Field Name="BiddingType">Bidding Type1</Field>
+          <Field Name="TotalProjectSpendBUs">0</Field>
+          <Field Name="TotalProjectSpendRegions">0</Field>
+          <Field Name="TotalProjectSpendBUA">0</Field>
+          <Field Name="TotalProjectSpendBUB">0</Field>
+          <Field Name="TotalProjectSpendBUL">0</Field>
+          <Field Name="TotalProjectSpendforAP">0</Field>
+          <Field Name="TotalProjectSpendforCE">0</Field>
+          <Field Name="TotalProjectSpendforCIS">0</Field>
+          <Field Name="TotalProjectSpendforIMEA">0</Field>
+          <Field Name="TotalProjectSpendforLAN">0</Field>
+          <Field Name="TotalProjectSpendforLAS">0</Field>
+          <Field Name="TotalProjectSpendforNA">0</Field>
+          <Field Name="TotalProjectSpendforWE">0</Field>
+          <Field Name="ExceptionCountry">0</Field>
+          <Field Name="AddressableSpend">0</Field>
+          <Field Name="AuctionableSpend">0</Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

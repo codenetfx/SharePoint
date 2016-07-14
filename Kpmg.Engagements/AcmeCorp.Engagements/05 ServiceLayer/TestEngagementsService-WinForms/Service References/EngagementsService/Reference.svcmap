@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3092c55a-ba9f-4e1e-9563-7406d57b4900" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://appsrv1.spfarm.local:801/EngagementsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EngagementsService.xsd" MetadataType="Schema" ID="093aa1c8-9c8d-4788-a9f0-22d61c0eccf1" SourceId="1" SourceUrl="http://appsrv1.spfarm.local:801/EngagementsService.svc?xsd=xsd3" />
+    <MetadataFile FileName="EngagementsService1.xsd" MetadataType="Schema" ID="e7188314-e91e-408e-9be8-dc953afd4804" SourceId="1" SourceUrl="http://appsrv1.spfarm.local:801/EngagementsService.svc?xsd=xsd0" />
+    <MetadataFile FileName="EngagementsService2.xsd" MetadataType="Schema" ID="9e20231a-18c8-4416-967a-244e35e2a9c4" SourceId="1" SourceUrl="http://appsrv1.spfarm.local:801/EngagementsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EngagementsService.wsdl" MetadataType="Wsdl" ID="7f43c422-9e63-4c5d-bc5e-fc2fa0061a99" SourceId="1" SourceUrl="http://appsrv1.spfarm.local:801/EngagementsService.svc?wsdl" />
+    <MetadataFile FileName="EngagementsService.disco" MetadataType="Disco" ID="36e443b3-096b-4539-9511-919311510e73" SourceId="1" SourceUrl="http://appsrv1.spfarm.local:801/EngagementsService.svc?disco" />
+    <MetadataFile FileName="EngagementsService3.xsd" MetadataType="Schema" ID="6e7434d7-537a-494b-8cf2-76306ae87f0f" SourceId="1" SourceUrl="http://appsrv1.spfarm.local:801/EngagementsService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

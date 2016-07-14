@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomActionGroup Id="haviviCustomSettings"
+          Location="Microsoft.SharePoint.Administration.SystemSettings"
+          Title="Custom Settings"
+            ImageUrl="/_layouts/15/images/pbs2013/centraladmin_systemsettings_32x32.png"
+          Sequence="300" />
+  <CustomAction
+		 Id="PropertyBagSettings"
+		 GroupId="haviviCustomSettings"
+		 Location="Microsoft.SharePoint.Administration.SystemSettings"
+		 Sequence="20"
+		 Title="Property Bag Settings">
+    <UrlAction
+			Url="/_admin/pbs2013/PropertyBagSettings.aspx" />
+  </CustomAction>
+  <CustomAction
+   Id="PropertyBagSettings"
+   GroupId="SiteAdministration"
+   Location="Microsoft.SharePoint.SiteSettings"
+   Sequence="1120"
+   Title="Property Bag Settings">
+    <UrlAction
+        Url="_layouts/pbs2013/PropertyBag.aspx" />
+  </CustomAction>
+</Elements>

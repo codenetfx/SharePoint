@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c9321451-756e-4a5c-9e16-63f705bbc2bc" solutionId="c9321451-756e-4a5c-9e16-63f705bbc2bc" resetWebServer="false" sharePointProductVersion="15.0" name="EngagementsTimerJobs" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="Acme.Core.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\..\Acme.Core\Acme.Core\Acme.Core.csproj" />
+    <projectOutputAssembly location="Acme.SharePointCore.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\..\Acme.Core\Acme.SharePointCore\Acme.SharePointCore.csproj" />
+    <projectOutputAssembly location="AcmeCorp.Engagements.EngagementsApi.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\02 BusinessLayer\EngagementsApi\EngagementsApi.csproj" />
+    <projectOutputAssembly location="AcmeCorp.Engagements.EngagementsDomain.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\02 BusinessLayer\EngagementsDomain\EngagementsDomain.csproj" />
+    <projectOutputAssembly location="AcmeCorp.Engagements.EngagementsSharePointDataAccess.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\03 DataAccessLayer\EngagementsSharePointDataAccess\EngagementsSharePointDataAccess.csproj" />
+    <projectOutputAssembly location="Acme.Core.MultiLanguageDb.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\..\Acme.Core\Acme.Core.MultiLanguageDb\Acme.Core.MultiLanguageDb.csproj" />
+    <projectOutputAssembly location="AcmeCorp.Engagements.EngagementsServiceBus.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\02 BusinessLayer\EngagementsServiceBus\EngagementsServiceBus.csproj" />
+    <projectOutputAssembly location="ApiFactory.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\UiHelpers\ApiFactory\ApiFactory.csproj" />
+    <customAssembly location="Microsoft.ServiceBus.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="C:\Program Files\Service Bus\1.0\Microsoft.ServiceBus.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="db7ebb55-44a8-48e9-bd73-b91f3c462e50" />
+    <featureReference itemId="18015223-ec34-4c57-99d6-088cb737b034" />
+  </features>
+</package>

@@ -1,0 +1,58 @@
+﻿<%@Master language="C#"%>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> <%@ Import Namespace="Microsoft.SharePoint" %> <%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="Html1"   runat="server">
+<head id="Head1" runat="server">
+	<meta name="GENERATOR" content="Microsoft SharePoint">
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta http-equiv="Expires" content="0">
+	<base target="_self">
+	<title id="onetidTitle"><asp:ContentPlaceHolder id=PlaceHolderPageTitle runat="server"/></title>
+	<SharePoint:ScriptLink ID="ScriptLink1" language="javascript" Name="core.js" Localizable="false" runat="server"/>
+	<SharePoint:CssLink ID="CssLink1" runat="server"/>
+	<SharePoint:CssRegistration ID="CssRegistration1" Name="corev4.css" runat="server" />
+	<SharePoint:Theme ID="Theme1" runat="server"/>
+	<SharePoint:CustomJSUrl ID="CustomJSUrl1" runat="server" />
+	<SharePoint:CssRegistration ID="CssRegistration2" Name="layouts.css" runat="server" />
+	<SharePoint:CssRegistration ID="CssRegistration3" Name="cui.css" runat="server" />
+	<link type="text/xml" rel='alternate' href="_vti_bin/spdisco.aspx" />
+	<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server"/>
+	<script language="javascript">
+	    function _spReturnSelection(returnValue) {
+	        setModalDialogReturnValue(window, returnValue);
+	        window.close();
+	    }
+	</script>
+</head>
+<body marginwidth="0" marginheight="0" ows_dynamic onload="javascript:_spBodyOnLoadWrapper();">
+ <form id="Form1" runat="server" onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}">
+  <asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="false" EnableScriptLocalization="true" />
+  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+	<tr>
+	   <td valign="center" id="onetidPageTitleAreaFrame" class='s4-popuptitle' style="white-space: nowrap" width="100%">
+		 <table>
+			<tr>
+				<td id="onetidPageTitle" width="100%" style="white-space: nowrap">
+				  <h1>
+					<!-- Page Title -->
+					<asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server"/>
+				  </h1>
+				</td>
+			</tr>
+		</table>
+	  </td>
+	</tr>
+  </table>
+  <table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td valign="top">
+			<asp:ContentPlaceHolder id="PlaceHolderMain" runat="server"/>
+		</td>
+	</tr>
+  </table>
+  <SharePoint:FormDigest ID="FormDigest1" runat="server" />
+ </form>
+</body>
+</html>

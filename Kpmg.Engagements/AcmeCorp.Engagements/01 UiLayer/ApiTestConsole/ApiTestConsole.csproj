@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C014856F-781D-48F5-8786-5883E37FF976}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcmeCorp.Engagements.ApiTestConsole</RootNamespace>
+    <AssemblyName>AcmeCorp.Engagements.ApiTestConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AcmeCorpEngagements.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcmeCorpEngagements.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Acme.Core\Acme.Core.MultiLanguageDb\Acme.Core.MultiLanguageDb.csproj">
+      <Project>{2dc71467-fc25-4207-9621-2611b18c6326}</Project>
+      <Name>Acme.Core.MultiLanguageDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Acme.Core\Acme.Core\Acme.Core.csproj">
+      <Project>{5a9e55a8-dd15-4532-a292-65098a9789e0}</Project>
+      <Name>Acme.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Acme.Core\Acme.SharePointCore\Acme.SharePointCore.csproj">
+      <Project>{6bbc5e5e-6f86-440d-b4f3-695b26c66989}</Project>
+      <Name>Acme.SharePointCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02 BusinessLayer\EngagementsApi\EngagementsApi.csproj">
+      <Project>{d43ae348-cd69-45f3-9aa5-07e4fa0bb936}</Project>
+      <Name>EngagementsApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02 BusinessLayer\EngagementsDomain\EngagementsDomain.csproj">
+      <Project>{cd02009b-ab42-46f4-97ae-2757dd3f9136}</Project>
+      <Name>EngagementsDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03 DataAccessLayer\EngagementsSharePointDataAccess\EngagementsSharePointDataAccess.csproj">
+      <Project>{a748422c-c404-4827-84bc-cae9a1471efd}</Project>
+      <Name>EngagementsSharePointDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UiHelpers\ApiFactory\ApiFactory.csproj">
+      <Project>{9f6cc007-2ac8-4610-aa28-69c7cf39f24c}</Project>
+      <Name>ApiFactory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

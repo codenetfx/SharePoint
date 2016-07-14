@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="AcmeCorpTheme" Url="_catalogs/theme/15">
+<File Path="AcmeCorpTheme\PaletteAcmeCorp.SPCOLOR" Url="PaletteAcmeCorp.SPCOLOR" IgnoreIfAlreadyExists="True"
+Type="GhostableInLibrary" />
+</Module>
+</Elements>

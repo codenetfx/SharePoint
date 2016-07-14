@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="01 Initiate" OnQuickLaunch="FALSE" TemplateType="10000" Url="Lists/01Initiate" Description="Initiate Phase"></ListInstance>
+</Elements>

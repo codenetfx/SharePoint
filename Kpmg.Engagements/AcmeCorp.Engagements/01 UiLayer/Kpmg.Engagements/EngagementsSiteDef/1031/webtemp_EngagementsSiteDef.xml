@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Templates xmlns:ows="Microsoft SharePoint">
+  <Template Name="EngagementsSiteDef" ID="10099">
+    <Configuration ID="0" Title="EngagementsSiteDef" Hidden="FALSE" ImageUrl="/_layouts/images/CPVW.gif" Description="EngagementsSiteDef" DisplayCategory="SharePoint Customizations" >
+    </Configuration>
+  </Template>
+</Templates>

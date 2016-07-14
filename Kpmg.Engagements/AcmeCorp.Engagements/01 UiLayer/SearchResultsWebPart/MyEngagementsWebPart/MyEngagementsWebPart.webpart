@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="SearchResultsWebPart.MyEngagementsWebPart.MyEngagementsWebPart, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">My Project Spaces</property>
+        <property name="Description" type="string">Showing details about Opportunities and Engagements for current users</property>
+        <property name="PropertyItems" type="string">KE-status;KE-Name-des-Mandanten;KE-Bezeichnung;KE-Eng-Partner;KE-Eng-Manager;KE-WB-Auftrag-Status;</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

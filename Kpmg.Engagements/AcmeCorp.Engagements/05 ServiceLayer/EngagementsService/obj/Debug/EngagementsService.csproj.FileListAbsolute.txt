@@ -1,0 +1,1 @@
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\EngagementsService\obj\Debug\EngagementsService.csprojResolveAssemblyReference.cache

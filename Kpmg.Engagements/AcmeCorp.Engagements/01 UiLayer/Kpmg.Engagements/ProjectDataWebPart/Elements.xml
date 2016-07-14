@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="ProjectDataWebPart" List="113" Url="_catalogs/wp">
+    <File Path="ProjectDataWebPart\ProjectDataWebPart.webpart" Url="AcmeCorp.Engagements_ProjectDataWebPart.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="AcmeCorp Web Parts" />
+    </File>
+  </Module>
+</Elements>

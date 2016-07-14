@@ -1,0 +1,9 @@
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\bin\Debug\TestEngagementsService-WinForms.exe.config
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\bin\Debug\TestEngagementsService-WinForms.exe
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\bin\Debug\TestEngagementsService-WinForms.pdb
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\obj\Debug\TestEngagementsService-WinForms.csprojResolveAssemblyReference.cache
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\obj\Debug\TestEngagementsService_WinForms.Form1.resources
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\obj\Debug\TestEngagementsService_WinForms.Properties.Resources.resources
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\obj\Debug\TestEngagementsService-WinForms.csproj.GenerateResource.Cache
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\obj\Debug\TestEngagementsService-WinForms.exe
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService-WinForms\obj\Debug\TestEngagementsService-WinForms.pdb

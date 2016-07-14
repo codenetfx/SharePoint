@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SourcingInitiatorList" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SourcingInitiatorList" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x01000bdc51fb414946fcb8ee2716b9f2d97c" Name="ListFieldsContentType">
+        <FieldRefs>
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{29090b78-da6e-42e9-bb1b-2dff2d04a1ec}" Name="RequestID" />
+          <FieldRef ID="{f17b5a15-6cf2-45b7-b18c-6b838c5626f8}" Name="ProjectName" />
+          <FieldRef ID="{10ea8a70-2107-490c-832c-c8c01785d41f}" Name="Scope" />
+          <FieldRef ID="{288F5F32-8462-4175-8F09-DD7BA29359A9}" Name="SupplierList" />
+          <FieldRef ID="{03a53f4a-ca40-4fb8-a56f-57f0c20eaaa8}" Name="Status" />
+          <FieldRef ID="{66823a8a-9b81-403e-acb8-6cc0ebb0f3a0}" Name="ProjectStart" />
+          <FieldRef ID="{2f05a89a-15c1-4627-92d6-b40516a82717}" Name="Basket" />
+          <FieldRef ID="{be1d8673-2ae5-4135-974b-b48318bd025c}" Name="Category" />
+          <FieldRef ID="{949e0ac6-1ec4-495a-9ea5-8cd37d86f29a}" Name="CategoryType" />
+          <FieldRef ID="{e34ed1ed-8a00-4857-b73d-e3cdacd3bbc0}" Name="BU" />
+          <FieldRef ID="{b22d2d48-2cb3-49fe-992c-f73b4b5fe74b}" Name="SubBU" />
+          <FieldRef ID="{630c9bea-d96b-44b7-97a1-ba856ea67156}" Name="PlannedProject" />
+          <FieldRef ID="{a339c778-44a9-4a31-bfb9-327ebd4a0d16}" Name="LastModifiedBy" />
+          <FieldRef ID="{f8d551bf-27f2-4049-946e-f7d06d04b2e7}" Name="BiddingStart" />
+          <FieldRef ID="{2FEB0804-802B-4DB4-9AA1-295FD0B909E2}" Name="BiddingType" />
+          <FieldRef ID="{37CB36B0-DAF1-48C5-B1BE-300403D442D5}" Name="TotalProjectSpendBUs" />
+          <FieldRef ID="{A5487656-211F-42E8-A7B8-5BEB2E22957E}" Name="TotalProjectSpendRegions" />
+          <FieldRef ID="{51F9EF02-1C81-4BB6-AB77-9AA3265B83C9}" Name="ProjectSpendforBUA" />
+          <FieldRef ID="{E9F52FAF-240F-4278-B9BC-2A74D6CD634E}" Name="ProjectSpendforBUB" />
+          <FieldRef ID="{E9F52FAF-240F-4278-B9BC-2A74D6CD634E}" Name="ProjectSpendforBUL" />
+          <FieldRef ID="{F98F9807-FB77-494A-AC2B-B0272EF7E372}" Name="ProjectSpendforAP" />
+          <FieldRef ID="{DFEF865F-A7C1-4F06-92C3-EF464A55C257}" Name="ProjectSpendforCE" />
+          <FieldRef ID="{1109FF26-C7FE-4AD9-948A-C75374713537}" Name="ProjectSpendforCIS" />
+          <FieldRef ID="{80C4C8B3-EBAD-40B3-87D3-687E31254028}" Name="ProjectSpendforIMEA" />
+          <FieldRef ID="{EB957A66-B7EC-4F08-9902-B7531AF7C6ED}" Name="ProjectSpendforLAN" />
+          <FieldRef ID="{75020E08-2E6C-423D-9DBD-C3E0307AA7FB}" Name="ProjectSpendforLAS" />
+          <FieldRef ID="{FF944B96-472E-49E2-8ED9-1421D1FC946E}" Name="ProjectSpendforNA" />
+          <FieldRef ID="{E2EF7214-1123-4136-A29E-69910FED2D7A}" Name="ProjectSpendforWE" />
+          <FieldRef ID="{0AD5FA2B-AEA2-45B6-9E2B-7F0DF722C27B}" Name="ExceptionCountry" />
+          <FieldRef ID="{1615576F-A290-4E24-81A4-CC49F859DD6D}" Name="AddressableSpend" />
+          <FieldRef ID="{FF16D5EB-C2BA-4896-AC63-AB17D65F335E}" Name="AuctionableSpend" />
+          <FieldRef ID="{619D7C19-26CA-48A9-96C3-EFECAE2343CB}" Name="SuggestedCollaborationModel" />
+          <FieldRef ID="{821991B6-7052-4F85-8DFD-8E289AA6F16A}" Name="GlobalResponsible" />
+          <FieldRef ID="{0967DAD3-9992-43BE-A2FC-79CC33A62911}" Name="SelectedCollaborationModel" />
+          <FieldRef ID="{1A802B96-E3D0-49D1-9B84-FD302EFA2CE4}" Name="DowngradingApprover" />
+          <FieldRef ID="{BA17C3C2-8185-4C98-A3C3-FA9E5992EBC2}" Name="SourcingType" />
+          <FieldRef ID="{C9BA8510-88AF-4773-B1A8-17AD92BA13FF}" Name="ProjectManager" />
+          <FieldRef ID="{E8837CDA-DDC9-4102-B920-F5518F336443}" Name="Comment" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="RequestID" ID="{29090b78-da6e-42e9-bb1b-2dff2d04a1ec}" DisplayName="Request ID" Type="Text" />
+      <Field Name="ProjectName" ID="{10ea8a70-2107-490c-832c-c8c01785d41f}" DisplayName="Project Name" Type="Text" />
+      <Field Name="Scope" ID="{03a53f4a-ca40-4fb8-a56f-57f0c20eaaa8}" DisplayName="Scope" Type="Text" />
+      <Field Name="SupplierList" ID="{66823a8a-9b81-403e-acb8-6cc0ebb0f3a0}" DisplayName="Supplier List" Type="Text" />
+      <Field Name="Status" ID="{2f05a89a-15c1-4627-92d6-b40516a82717}" DisplayName="Status" Type="Text" />
+      <Field Name="ProjectStart" ID="{EB957A66-B7EC-4F08-9902-B7531AF7C6ED}" DisplayName="Project Start" Type="DateTime" Format="DateOnly" />
+      <Field Name="Basket" ID="{be1d8673-2ae5-4135-974b-b48318bd025c}" DisplayName="Basket" Type="Text" />
+      <Field Name="Category" ID="{949e0ac6-1ec4-495a-9ea5-8cd37d86f29a}" DisplayName="Category" Type="Text" />
+      <Field Name="CategoryType" ID="{b22d2d48-2cb3-49fe-992c-f73b4b5fe74b}" DisplayName="Category Type" Type="Text" />
+      <Field Name="BU" ID="{630c9bea-d96b-44b7-97a1-ba856ea67156}" DisplayName="BU" Type="Text" />
+      <Field Name="SubBU" ID="{a339c778-44a9-4a31-bfb9-327ebd4a0d16}" DisplayName="Sub-BU" Type="Text" />
+      <Field Name="PlannedProject" ID="{f17b5a15-6cf2-45b7-b18c-6b838c5626f8}" DisplayName="Planned Project" Type="Choice" >
+        <CHOICES>
+          <CHOICE>Yes</CHOICE>
+          <CHOICE>No</CHOICE>
+        </CHOICES>
+      </Field>
+      <Field Name="LastModifiedBy" ID="{f8d551bf-27f2-4049-946e-f7d06d04b2e7}" DisplayName="Last Modified By" Type="Text" />
+      <Field Name="BiddingStart" ID="{E9F52FAF-240F-4278-B9BC-2A74D6CD634E}" DisplayName="Bidding Start" Type="DateTime" Format="DateOnly" />
+      <Field Name="BiddingType" ID="{2FEB0804-802B-4DB4-9AA1-295FD0B909E2}" DisplayName="Bidding Type" Type="Text" />
+      <Field Name="TotalProjectSpendBUs" ID="{f8d551bf-27f2-4049-946e-f7d06d04b2e7}" DisplayName="Total Project Spend - BUs" Type="Text" />
+      <Field Name="TotalProjectSpendRegions" ID="{e34ed1ed-8a00-4857-b73d-e3cdacd3bbc0}" DisplayName="Total Project Spend - Regions" Type="Text" />
+      <Field Name="TotalProjectSpendforBUA" ID="{37CB36B0-DAF1-48C5-B1BE-300403D442D5}" DisplayName="Project Spend for BU A" Type="Text" />
+      <Field Name="TotalProjectSpendforBUB" ID="{A5487656-211F-42E8-A7B8-5BEB2E22957E}" DisplayName="Project Spend for BU B" Type="Text" />
+      <Field Name="TotalProjectSpendforBUL" ID="{51F9EF02-1C81-4BB6-AB77-9AA3265B83C9}" DisplayName="Project Spend for BU L" Type="Text" />
+      <Field Name="TotalProjectSpendforAP" ID="{E9F52FAF-240F-4278-B9BC-2A74D6CD634E}" DisplayName="Project Spend for AP" Type="Text" />
+      <Field Name="TotalProjectSpendforCE" ID="{F98F9807-FB77-494A-AC2B-B0272EF7E372}" DisplayName="Project Spend for CE" Type="Text" />
+      <Field Name="TotalProjectSpendforCIS" ID="{DFEF865F-A7C1-4F06-92C3-EF464A55C257}" DisplayName="Project Spend for CIS" Type="Text" />
+      <Field Name="TotalProjectSpendforIMEA" ID="{1109FF26-C7FE-4AD9-948A-C75374713537}" DisplayName="Project Spend for IMEA" Type="Text" />
+      <Field Name="TotalProjectSpendforLAN" ID="{80C4C8B3-EBAD-40B3-87D3-687E31254028}" DisplayName="Project Spend for LAN" Type="Text" />
+      <Field Name="TotalProjectSpendforLAS" ID="{75020E08-2E6C-423D-9DBD-C3E0307AA7FB}" DisplayName="Project Spend for LAS" Type="Text" />
+      <Field Name="TotalProjectSpendforNA" ID="{FF944B96-472E-49E2-8ED9-1421D1FC946E}"  DisplayName="Project Spend for NA" Type="Text" />
+      <Field Name="TotalProjectSpendforWE" ID="{E2EF7214-1123-4136-A29E-69910FED2D7A}" DisplayName="Project Spend for WE" Type="Text" />
+      <Field Name="ExceptionCountry" ID="{0AD5FA2B-AEA2-45B6-9E2B-7F0DF722C27B}"  DisplayName="Exception Country" Type="Text" />
+      <Field Name="AddressableSpend" ID="{1615576F-A290-4E24-81A4-CC49F859DD6D}" DisplayName="Addressable Spend" Type="Text" />
+      <Field Name="AuctionableeSpend" ID="{FF16D5EB-C2BA-4896-AC63-AB17D65F335E}" DisplayName="Auctionable Spend" Type="Text" />
+
+      <Field Name="SuggestedCollaborationModel" ID="{619D7C19-26CA-48A9-96C3-EFECAE2343CB}"  DisplayName="Suggested Collaboration Model" Type="Text" />
+      <Field Name="GlobalResponsible" ID="{821991B6-7052-4F85-8DFD-8E289AA6F16A}" DisplayName="Global Responsible" Type="Text" />
+      <Field Name="SelectedCollaborationModel" ID="{0967DAD3-9992-43BE-A2FC-79CC33A62911}"  DisplayName="Selected Collaboration Model" Type="Text" />
+      <Field Name="DowngradingApprover" ID="{BA17C3C2-8185-4C98-A3C3-FA9E5992EBC2}"  DisplayName="DowngradingApprover" Type="Text" />
+      <Field Name="SourcingType" ID="{C9BA8510-88AF-4773-B1A8-17AD92BA13FF}"  DisplayName="SourcingType" Type="Text" />
+      <Field Name="ProjectManager" ID="{E8837CDA-DDC9-4102-B920-F5518F336443}"  DisplayName="ProjectManager" Type="Text" />
+      <Field Name="Comment" ID="{5F5D3D19-9E80-496B-8A4E-2B86F04C4BF8}"   DisplayName="Comment" Type="Text" />
+      <Field Name="TailEnd" ID="{9F2E5998-0936-4ECD-AC36-022348C7F294}" DisplayName="Tail End" Type="Boolean" />
+    </Fields>
+    <Views>
+
+
+
+
+      <View BaseViewID="11" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="12" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="RequestID"></FieldRef>
+          <FieldRef Name="ProjectName" />
+          <FieldRef Name="Scope" />
+          <FieldRef Name="Supplier List" />
+          <FieldRef Name="Status" />
+          <FieldRef Name="ProjectStart" />
+          <FieldRef Name="Basket" />
+          <FieldRef Name="Category" />
+          <FieldRef Name="CategoryType" />
+          <FieldRef Name="BU" />
+          <FieldRef Name="SubBU" />
+          <FieldRef Name="PlannedProject" />
+          <FieldRef Name="LastModifiedBy" />
+          <FieldRef Name="BiddingStart" />
+          <FieldRef Name="BiddingType" />
+          <FieldRef Name="TotalProjectSpendBUs" />
+          <FieldRef Name="TotalProjectSpendRegions" />
+          <FieldRef Name="TotalProjectSpendBUA" />
+          <FieldRef Name="TotalProjectSpendBUB" />
+          <FieldRef Name="TotalProjectSpendBUL" />
+          <FieldRef Name="TotalProjectSpendforAP" />
+          <FieldRef Name="TotalProjectSpendforCE" />
+          <FieldRef Name="TotalProjectSpendforCIS" />
+          <FieldRef Name="TotalProjectSpendforIMEA" />
+          <FieldRef Name="TotalProjectSpendforLAN" />
+          <FieldRef Name="TotalProjectSpendforLAS" />
+          <FieldRef Name="TotalProjectSpendforNA" />
+          <FieldRef Name="TotalProjectSpendforWE" />
+          <FieldRef Name="ExceptionCountry" />
+          <FieldRef Name="AddressableSpend" />
+          <FieldRef Name="AuctionableSpend" />
+          <FieldRef Name="SuggestedCollaborationModel" />
+          <FieldRef Name="GlobalResponsible" />
+          <FieldRef Name="SelectedCollaborationModel" />
+          <FieldRef Name="DowngradingApprover" />
+          <FieldRef Name="SourcingType" />
+          <FieldRef Name="ProjectManager" />
+          <FieldRef Name="Comment" />
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+     
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

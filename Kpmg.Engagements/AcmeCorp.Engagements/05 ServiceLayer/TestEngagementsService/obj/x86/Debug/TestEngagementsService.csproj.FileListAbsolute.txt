@@ -1,0 +1,6 @@
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService\bin\Debug\TestEngagementsService.exe.config
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService\bin\Debug\TestEngagementsService.exe
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService\bin\Debug\TestEngagementsService.pdb
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService\obj\x86\Debug\TestEngagementsService.csprojResolveAssemblyReference.cache
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService\obj\x86\Debug\TestEngagementsService.exe
+C:\Projects\AcmeCorp.Engagements\05 ServiceLayer\TestEngagementsService\obj\x86\Debug\TestEngagementsService.pdb

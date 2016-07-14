@@ -1,0 +1,13 @@
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\obj\Debug\EngagementsServiceBus.csprojResolveAssemblyReference.cache
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\AcmeCorp.Engagements.EngagementsServiceBus.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\AcmeCorp.Engagements.EngagementsServiceBus.pdb
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\AcmeCorp.Engagements.EngagementsApi.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\AcmeCorp.Engagements.EngagementsDomain.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\Microsoft.ServiceBus.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\Acme.Core.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\Acme.Core.pdb
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\AcmeCorp.Engagements.EngagementsApi.pdb
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\AcmeCorp.Engagements.EngagementsDomain.pdb
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\bin\Debug\Microsoft.ServiceBus.xml
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\obj\Debug\AcmeCorp.Engagements.EngagementsServiceBus.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsServiceBus\obj\Debug\AcmeCorp.Engagements.EngagementsServiceBus.pdb

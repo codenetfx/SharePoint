@@ -1,0 +1,13 @@
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\AcmeCorp.Engagements.EngagementsSharePointDataAccess.dll
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\AcmeCorp.Engagements.EngagementsSharePointDataAccess.pdb
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\AcmeCorp.Engagements.EngagementsDomain.dll
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\Acme.Core.dll
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\Acme.SharePointCore.dll
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\Acme.Core.pdb
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\Acme.SharePointCore.pdb
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\AcmeCorp.Engagements.EngagementsDomain.pdb
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\obj\Debug\EngagementsSharePointDataAccess.csprojResolveAssemblyReference.cache
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\obj\Debug\AcmeCorp.Engagements.EngagementsSharePointDataAccess.dll
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\obj\Debug\AcmeCorp.Engagements.EngagementsSharePointDataAccess.pdb
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\SAPLookupTableService.dll
+C:\Projects\AcmeCorp.Engagements\03 DataAccessLayer\EngagementsSharePointDataAccess\bin\Debug\SAPLookupTableService.pdb

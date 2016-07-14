@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CreateInternalContainer" List="113" Url="_catalogs/wp">
+    <File Path="CreateInternalContainer\CreateInternalContainer.webpart" Url="AcmeCorp.ProjectSpace.Administration_CreateInternalContainer.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="AcmeCorp Web Parts" />
+    </File>
+  </Module>
+</Elements>

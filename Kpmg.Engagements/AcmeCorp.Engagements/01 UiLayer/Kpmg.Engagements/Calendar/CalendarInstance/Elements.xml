@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Calendar"
+                OnQuickLaunch="TRUE"
+                TemplateType="10002"
+                Url="Lists/Calendar"
+                Description="My List Instance">
+  </ListInstance>
+</Elements>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EngagementsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpEndpoint_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <http:NtlmAuthentication xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" />
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="https://projectspace-test.de.kworld.kpmg.com:801/EngagementsService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://projectspace-test.de.kworld.kpmg.com:801/EngagementsService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://projectspace-test.de.kworld.kpmg.com:801/EngagementsService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KPMG.Engagements.EngagementsService" />
+      <xsd:import schemaLocation="https://projectspace-test.de.kworld.kpmg.com:801/EngagementsService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEngagementsService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_CreateNewEngagementSite_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewEngagementSite" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_CreateNewEngagementSite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewEngagementSiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_UpdateEngagementSiteProperties_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEngagementSiteProperties" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_UpdateEngagementSiteProperties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateEngagementSitePropertiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_GetEngagementStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEngagementStatus" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_GetEngagementStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEngagementStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_CloseEngagement_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloseEngagement" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_CloseEngagement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloseEngagementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_ReopenEngagement_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReopenEngagement" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_ReopenEngagement_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReopenEngagementResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_CreateNewOpportunitySite_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewOpportunitySite" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_CreateNewOpportunitySite_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewOpportunitySiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_UpdateOpportunitySiteProperties_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOpportunitySiteProperties" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_UpdateOpportunitySiteProperties_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOpportunitySitePropertiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_CreateEngagementFromOpportunity_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEngagementFromOpportunity" />
+  </wsdl:message>
+  <wsdl:message name="IEngagementsService_CreateEngagementFromOpportunity_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateEngagementFromOpportunityResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEngagementsService">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/GetData" message="tns:IEngagementsService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/GetDataResponse" message="tns:IEngagementsService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/GetDataUsingDataContract" message="tns:IEngagementsService_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/GetDataUsingDataContractResponse" message="tns:IEngagementsService_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewEngagementSite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/CreateNewEngagementSite" message="tns:IEngagementsService_CreateNewEngagementSite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/CreateNewEngagementSiteResponse" message="tns:IEngagementsService_CreateNewEngagementSite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEngagementSiteProperties">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/UpdateEngagementSiteProperties" message="tns:IEngagementsService_UpdateEngagementSiteProperties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/UpdateEngagementSitePropertiesResponse" message="tns:IEngagementsService_UpdateEngagementSiteProperties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEngagementStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/GetEngagementStatus" message="tns:IEngagementsService_GetEngagementStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/GetEngagementStatusResponse" message="tns:IEngagementsService_GetEngagementStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseEngagement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/CloseEngagement" message="tns:IEngagementsService_CloseEngagement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/CloseEngagementResponse" message="tns:IEngagementsService_CloseEngagement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReopenEngagement">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/ReopenEngagement" message="tns:IEngagementsService_ReopenEngagement_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/ReopenEngagementResponse" message="tns:IEngagementsService_ReopenEngagement_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewOpportunitySite">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/CreateNewOpportunitySite" message="tns:IEngagementsService_CreateNewOpportunitySite_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/CreateNewOpportunitySiteResponse" message="tns:IEngagementsService_CreateNewOpportunitySite_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOpportunitySiteProperties">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/UpdateOpportunitySiteProperties" message="tns:IEngagementsService_UpdateOpportunitySiteProperties_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/UpdateOpportunitySitePropertiesResponse" message="tns:IEngagementsService_UpdateOpportunitySiteProperties_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateEngagementFromOpportunity">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEngagementsService/CreateEngagementFromOpportunity" message="tns:IEngagementsService_CreateEngagementFromOpportunity_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEngagementsService/CreateEngagementFromOpportunityResponse" message="tns:IEngagementsService_CreateEngagementFromOpportunity_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpEndpoint" type="tns:IEngagementsService">
+    <wsp:PolicyReference URI="#BasicHttpEndpoint_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewEngagementSite">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/CreateNewEngagementSite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateEngagementSiteProperties">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/UpdateEngagementSiteProperties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEngagementStatus">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/GetEngagementStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseEngagement">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/CloseEngagement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReopenEngagement">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/ReopenEngagement" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewOpportunitySite">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/CreateNewOpportunitySite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOpportunitySiteProperties">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/UpdateOpportunitySiteProperties" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateEngagementFromOpportunity">
+      <soap:operation soapAction="http://tempuri.org/IEngagementsService/CreateEngagementFromOpportunity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EngagementsService">
+    <wsdl:port name="BasicHttpEndpoint" binding="tns:BasicHttpEndpoint">
+      <soap:address location="https://projectspace-test.de.kworld.kpmg.com:801/EngagementsService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

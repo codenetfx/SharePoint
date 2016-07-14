@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<s:theme xmlns:s="http://schemas.microsoft.com/sharepoint/"
+  name="Current"
+  colorPaletteUrl="theme.spcolor" />

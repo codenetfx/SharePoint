@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="ef7e823a-489b-46b7-a277-af77744f63f7" ChangeDateTime="09/20/2012 12:23:24">
+    <Property Name="ElementName" Value="[dbo].[tEngagements].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tEngagements]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="951b96e1-14b9-424f-85e9-8fe7b894454d" ChangeDateTime="09/20/2012 12:24:35">
+    <Property Name="ElementName" Value="[dbo].[tEngagements].[opportunityny]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tEngagements]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="opportunitynr" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bff71e72-c433-44f7-a305-0416fb8a0a7e" ChangeDateTime="09/20/2012 12:26:23">
+    <Property Name="ElementName" Value="[dbo].[tEngagements].[statusdatew]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tEngagements]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="statusdate" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cc4bb427-464c-452a-830d-f0b7c7c9f71e" ChangeDateTime="09/20/2012 12:27:24">
+    <Property Name="ElementName" Value="[dbo].[tEngagementStaff].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tEngagementStaff]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7f9da0e7-912d-40fc-9d1f-1651b457a3bf" ChangeDateTime="09/20/2012 12:35:11">
+    <Property Name="ElementName" Value="[dbo].[tEngagementStaff].[engagementid]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[tEngagementStaff]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="engagementwbid" />
+  </Operation>
+</Operations>

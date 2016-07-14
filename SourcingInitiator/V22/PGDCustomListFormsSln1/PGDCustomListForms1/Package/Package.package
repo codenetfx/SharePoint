@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="939fc136-9622-4eee-9ea5-35c3f328a515" solutionId="939fc136-9622-4eee-9ea5-35c3f328a515" resetWebServer="false" sharePointProductVersion="15.0" name="PGDCustomListForms1" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="4ae9f738-e029-4a7b-82e1-a78be1f955e4" />
+  </features>
+</package>

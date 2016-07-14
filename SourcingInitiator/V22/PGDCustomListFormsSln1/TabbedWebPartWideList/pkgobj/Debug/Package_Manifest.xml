@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="7988882d-93c7-4a24-8d44-0ca0126a33b5" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SourcingInitiatorWideList.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SourcingInitiatorWideList, Version=1.0.0.0, Culture=neutral, PublicKeyToken=49be9fba15cd86bc" Namespace="SourcingInitiatorWideList.SourcingInitiatorWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\SourcingInitiatorWideList\SourcingInitiatorWebPart\SourcingInitiatorUserControl.ascx" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\external\jquery\jquery.js" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_flat_10_000000_40x100.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-icons_222222_256x240.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-icons_228ef1_256x240.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-icons_ef8c08_256x240.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-icons_ffd27a_256x240.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\images\ui-icons_ffffff_256x240.png" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\jquery-ui.css" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\jquery-ui.js" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\jquery-ui.min.css" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\jquery-ui.min.js" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\jquery-ui.structure.css" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\jquery-ui.structure.min.css" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\jquery-ui.theme.css" />
+    <TemplateFile Location="Layouts\SourcingInitiator\jquery-ui-1.11.1\jquery-ui.theme.min.css" />
+    <TemplateFile Location="Layouts\SourcingInitiator\SourcingInitiatorLogic.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SourcingInitiatorWideList_WebPartListFeature\Feature.xml" />
+    <FeatureManifest Location="SourcingInitiatorWideList_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

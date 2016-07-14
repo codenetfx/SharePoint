@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SAPLookupTableService.Service1" CodeBehind="SAPLookupTable.svc.cs" %>

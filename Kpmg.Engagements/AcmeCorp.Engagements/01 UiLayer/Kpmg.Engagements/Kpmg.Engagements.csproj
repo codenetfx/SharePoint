@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55846938-90C0-473A-8F5A-C93227B001AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcmeCorp.Engagements</RootNamespace>
+    <AssemblyName>AcmeCorp.Engagements</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ProjectMode>SharePointCustomization</ProjectMode>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AcmeCorpEngagements.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.WorkflowActions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EngagementsListEventReceivers\EngagementsListEventReceivers.cs" />
+    <Compile Include="Features\AlternativeLanguagesFeature\AlternativeLanguagesFeature.EventReceiver.cs">
+      <DependentUpon>AlternativeLanguagesFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\EngagementsEnableTreeView\EngagementsEnableTreeView.EventReceiver.cs">
+      <DependentUpon>EngagementsEnableTreeView.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\EngagementsAcmeCorpBranding\EngagementsAcmeCorpBranding.EventReceiver.cs">
+      <DependentUpon>EngagementsAcmeCorpBranding.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDataWebPart\CustomProperty.cs" />
+    <Compile Include="ProjectDataWebPart\ProjectDataWebPart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="03DeliverListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d4844a97-0258-4f11-a09c-0ec563214f81}</SharePointProjectItemId>
+    </None>
+    <None Include="04CloseListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{619bd24c-a5c1-46c7-bfc0-cb95209b7049}</SharePointProjectItemId>
+    </None>
+    <None Include="Calendar\CalendarInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e5f497fe-32b5-450d-8cc9-6bf34c5ae1bc}</SharePointProjectItemId>
+    </None>
+    <None Include="Calendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0ec70159-1a87-4b3b-8ce9-0f43f84ea460}</SharePointProjectItemId>
+    </None>
+    <None Include="EngagementListsDef\01InitiateListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6ae4d102-a749-4973-8069-e2eaf4ceb43a}</SharePointProjectItemId>
+    </None>
+    <None Include="EngagementListsDef\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8dbf3db2-0153-4039-9fff-0bdc22486da1}</SharePointProjectItemId>
+    </None>
+    <None Include="EngagementsListEventReceivers\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e18cbdd0-f7d3-40d5-a03d-7ccc19be284f}</SharePointProjectItemId>
+    </None>
+    <None Include="EngagementsSiteDef\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7f617e7b-c247-4162-833f-1e0d2f607194}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\EngagementsSiteDefFeature\EngagementsSiteDefFeature.feature">
+      <FeatureId>{ba8dfc7f-f09b-4cbe-98f1-face4e3d20f9}</FeatureId>
+    </None>
+    <None Include="Features\EngagementsProjectDataWebPart\EngagementsProjectDataWebPart.feature">
+      <FeatureId>{f5e036cc-9c0e-44c5-9e5a-15bf86f9ca15}</FeatureId>
+    </None>
+    <None Include="Features\EngagementsEnableTreeView\EngagementsEnableTreeView.feature">
+      <FeatureId>{122c42c7-9d3f-401c-943d-3538bcaf3a72}</FeatureId>
+    </None>
+    <None Include="Features\EngagementsAcmeCorpBranding\EngagementsAcmeCorpBranding.feature">
+      <FeatureId>{90a05651-7eba-4bfc-8716-e7fc63c26869}</FeatureId>
+    </None>
+    <None Include="Features\AlternativeLanguagesFeature\AlternativeLanguagesFeature.feature">
+      <FeatureId>{47550983-2619-483d-8792-945673aa96de}</FeatureId>
+    </None>
+    <None Include="Features\AcmeCorpEngagementsCreateInternalContainerWebPart\AcmeCorpEngagementsCreateInternalContainerWebPart.feature">
+      <FeatureId>{99b3a4f9-3165-4152-a3be-e9e324bf37ab}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="02PlanListInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b502793f-bfd0-46e3-bfbf-d30309a835e0}</SharePointProjectItemId>
+    </None>
+    <None Include="AcmeCorpEngagements.snk" />
+    <None Include="AcmeCorpTheme\PaletteAcmeCorp.SPCOLOR" />
+    <None Include="AcmeCorpTheme\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b41e08d1-4fa3-4c62-aed4-0d0103fcea09}</SharePointProjectItemId>
+    </None>
+    <None Include="AcmeCorpTheme\theme.sptheme" />
+    <None Include="Package\Package.package">
+      <PackageId>{9e11d119-1c15-4fc7-9a0c-dbb17a78abf2}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ProjectDataWebPart\ProjectDataWebPart.webpart" />
+    <None Include="ProjectDataWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{08199033-9b70-4760-aa3c-7bc559ade7d7}</SharePointProjectItemId>
+    </None>
+    <None Include="Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e3018e1a-02d5-4bd4-839b-ab24c7a6bc99}</SharePointProjectItemId>
+    </None>
+    <None Include="Tasks\TasksInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{838d3121-28d5-45c0-83d7-dc0716f05f16}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Acme.Core\Acme.Core\Acme.Core.csproj">
+      <Project>{5a9e55a8-dd15-4532-a292-65098a9789e0}</Project>
+      <Name>Acme.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02 BusinessLayer\EngagementsApi\EngagementsApi.csproj">
+      <Project>{d43ae348-cd69-45f3-9aa5-07e4fa0bb936}</Project>
+      <Name>EngagementsApi</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\UiHelpers\ApiFactory\ApiFactory.csproj">
+      <Project>{9f6cc007-2ac8-4610-aa28-69c7cf39f24c}</Project>
+      <Name>ApiFactory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="03DeliverListInstance\Elements.xml" />
+    <Content Include="04CloseListInstance\Elements.xml" />
+    <Content Include="Calendar\CalendarInstance\Elements.xml" />
+    <Content Include="Calendar\Elements.xml" />
+    <Content Include="Calendar\Schema.xml" />
+    <Content Include="EngagementListsDef\EditDlg.htm" />
+    <Content Include="EngagementListsDef\Elements.xml" />
+    <Content Include="EngagementListsDef\01InitiateListInstance\Elements.xml" />
+    <Content Include="EngagementListsDef\FileDlg.htm" />
+    <Content Include="EngagementListsDef\Repair.aspx" />
+    <Content Include="EngagementListsDef\Schema.xml" />
+    <Content Include="EngagementListsDef\Upload.aspx" />
+    <Content Include="EngagementsSiteDef\200px-AcmeCorp_svg.png" />
+    <Content Include="EngagementsListEventReceivers\Elements.xml" />
+    <Content Include="EngagementsSiteDef\1031\webtemp_EngagementsSiteDef.xml" />
+    <Content Include="EngagementsSiteDef\default.aspx" />
+    <Content Include="EngagementsSiteDef\onet.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EngagementsSiteDef\1033\webtemp_EngagementsSiteDef.xml" />
+    <Content Include="Features\EngagementsSiteDefFeature\EngagementsSiteDefFeature.Template.xml">
+      <DependentUpon>EngagementsSiteDefFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="02PlanListInstance\Elements.xml" />
+    <Content Include="Features\EngagementsProjectDataWebPart\EngagementsProjectDataWebPart.Template.xml">
+      <DependentUpon>EngagementsProjectDataWebPart.feature</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Features\EngagementsEnableTreeView\EngagementsEnableTreeView.Template.xml">
+      <DependentUpon>EngagementsEnableTreeView.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\EngagementsAcmeCorpBranding\EngagementsAcmeCorpBranding.Template.xml">
+      <DependentUpon>EngagementsAcmeCorpBranding.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\AlternativeLanguagesFeature\AlternativeLanguagesFeature.Template.xml">
+      <DependentUpon>AlternativeLanguagesFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\AcmeCorpEngagementsCreateInternalContainerWebPart\AcmeCorpEngagementsCreateInternalContainerWebPart.Template.xml">
+      <DependentUpon>AcmeCorpEngagementsCreateInternalContainerWebPart.feature</DependentUpon>
+    </Content>
+    <Content Include="AcmeCorpTheme\Elements.xml" />
+    <Content Include="ProjectDataWebPart\Elements.xml" />
+    <Content Include="Tasks\Elements.xml" />
+    <Content Include="Tasks\Schema.xml" />
+    <Content Include="Tasks\TasksInstance\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

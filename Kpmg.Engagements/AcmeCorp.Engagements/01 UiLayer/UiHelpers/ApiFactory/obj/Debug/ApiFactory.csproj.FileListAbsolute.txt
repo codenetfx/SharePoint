@@ -1,0 +1,13 @@
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\ApiFactory.dll
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\ApiFactory.pdb
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\AcmeCorp.Engagements.EngagementsApi.dll
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\AcmeCorp.Engagements.EngagementsDomain.dll
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\Acme.Core.dll
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\Acme.SharePointCore.dll
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\Acme.Core.pdb
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\Acme.SharePointCore.pdb
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\AcmeCorp.Engagements.EngagementsApi.pdb
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\bin\Debug\AcmeCorp.Engagements.EngagementsDomain.pdb
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\obj\Debug\ApiFactory.csprojResolveAssemblyReference.cache
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\obj\Debug\ApiFactory.dll
+C:\Projects\AcmeCorp.Engagements\01 UiLayer\UiHelpers\ApiFactory\obj\Debug\ApiFactory.pdb

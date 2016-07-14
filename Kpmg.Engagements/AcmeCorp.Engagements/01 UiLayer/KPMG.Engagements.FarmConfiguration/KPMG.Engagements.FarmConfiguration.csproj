@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC1119E3-250F-4921-A7AE-6928C90EF2D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcmeCorp.Engagements.FarmConfiguration</RootNamespace>
+    <AssemblyName>AcmeCorp.Engagements.FarmConfiguration</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AcmeCorpEngagements.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN\pbs2013\PropertyBagSettings.aspx.designer.cs">
+      <DependentUpon>PropertyBagSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cTripleDES.cs" />
+    <Compile Include="ADMIN\pbs2013\PropertyBagSettings.aspx.cs">
+      <DependentUpon>PropertyBagSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\pbs2013\ModifyPropertyBag.aspx.cs">
+      <DependentUpon>ModifyPropertyBag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMIN\pbs2013\ModifyPropertyBag.aspx.designer.cs">
+      <DependentUpon>ModifyPropertyBag.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\PropertyBagSettings\PropertyBagSettings.EventReceiver.cs">
+      <DependentUpon>PropertyBagSettings.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\pbs2013\ExportPropertyBag.aspx.cs">
+      <DependentUpon>ExportPropertyBag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\pbs2013\ImportPropertyBag.aspx.cs">
+      <DependentUpon>ImportPropertyBag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\pbs2013\ModifyPropertyBag.aspx.cs">
+      <DependentUpon>ModifyPropertyBag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\pbs2013\PropertyBag.aspx.cs">
+      <DependentUpon>PropertyBag.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PBSPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SortedProperties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ADMIN\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5c5b7f52-359f-4e05-a57f-c5fc9180c6b6}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{de1b9697-bb56-4425-9077-3bfe010f1493}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\PropertyBagSettings\PropertyBagSettings.feature">
+      <FeatureId>{82e0a9c6-8fab-4ab2-8c56-29b21079a1f4}</FeatureId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8b62b439-1f2c-4036-84e2-c30ead36c8ca}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="AcmeCorpEngagements.snk" />
+    <None Include="Layouts\pbs2013\pbspopup.master" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d6d4114b-36ab-4011-a091-2dbc841cefa3}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{f3d6a4c7-5444-40d4-82c2-7e33ffbf59f3}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="CustomActions\Elements.xml" />
+    <Content Include="Features\PropertyBagSettings\PropertyBagSettings.Template.xml">
+      <DependentUpon>PropertyBagSettings.feature</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ADMIN\pbs2013\PropertyBagSettings.aspx" />
+    <Content Include="Images\pbs2013\centraladmin_systemsettings_32x32.png" />
+    <Content Include="ADMIN\pbs2013\ModifyPropertyBag.aspx" />
+    <Content Include="Layouts\pbs2013\ExportPropertyBag.aspx" />
+    <Content Include="Layouts\pbs2013\ImportPropertyBag.aspx" />
+    <Content Include="Layouts\pbs2013\ModifyPropertyBag.aspx" />
+    <Content Include="Layouts\pbs2013\PropertyBag.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

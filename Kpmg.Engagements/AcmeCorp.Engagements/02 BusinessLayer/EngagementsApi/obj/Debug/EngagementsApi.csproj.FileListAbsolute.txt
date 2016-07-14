@@ -1,0 +1,9 @@
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\obj\Debug\EngagementsApi.csprojResolveAssemblyReference.cache
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\bin\Debug\AcmeCorp.Engagements.EngagementsApi.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\bin\Debug\AcmeCorp.Engagements.EngagementsApi.pdb
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\bin\Debug\AcmeCorp.Engagements.EngagementsDomain.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\bin\Debug\Acme.Core.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\bin\Debug\Acme.Core.pdb
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\bin\Debug\AcmeCorp.Engagements.EngagementsDomain.pdb
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\obj\Debug\AcmeCorp.Engagements.EngagementsApi.dll
+C:\Projects\AcmeCorp.Engagements\02 BusinessLayer\EngagementsApi\obj\Debug\AcmeCorp.Engagements.EngagementsApi.pdb

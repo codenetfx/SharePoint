@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="1f0b33de-061e-42ae-894e-c3ba7c3f516c" Scope="Site" Title="SourcingInitiatorWideList Feature">
+  <ElementManifests>
+    <ElementManifest Location="SourcingInitiatorWebPart\Elements.xml" />
+    <ElementFile Location="SourcingInitiatorWebPart\SourcingInitiatorWebPart.webpart" />
+  </ElementManifests>
+</Feature>

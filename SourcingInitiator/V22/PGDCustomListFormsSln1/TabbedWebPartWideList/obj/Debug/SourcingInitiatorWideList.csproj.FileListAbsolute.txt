@@ -1,0 +1,5 @@
+C:\Development\Henkel\V22\PGDCustomListFormsSln1\TabbedWebPartWideList\bin\Debug\SourcingInitiatorWideList.dll
+C:\Development\Henkel\V22\PGDCustomListFormsSln1\TabbedWebPartWideList\bin\Debug\SourcingInitiatorWideList.pdb
+C:\Development\Henkel\V22\PGDCustomListFormsSln1\TabbedWebPartWideList\obj\Debug\SourcingInitiatorWideList.csprojResolveAssemblyReference.cache
+C:\Development\Henkel\V22\PGDCustomListFormsSln1\TabbedWebPartWideList\obj\Debug\SourcingInitiatorWideList.dll
+C:\Development\Henkel\V22\PGDCustomListFormsSln1\TabbedWebPartWideList\obj\Debug\SourcingInitiatorWideList.pdb

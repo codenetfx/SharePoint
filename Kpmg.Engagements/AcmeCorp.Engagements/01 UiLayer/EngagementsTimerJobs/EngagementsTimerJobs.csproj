@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96E25CF0-6608-4245-B103-0877DAD458FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AcmeCorp.Engagements.EngagementsTimerJobs</RootNamespace>
+    <AssemblyName>AcmeCorp.Engagements.EngagementsTimerJobs</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>AcmeCorpEngagements.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ServiceBus">
+      <HintPath>C:\Program Files\Service Bus\1.0\Microsoft.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ManagedPropertiesServiceBusProcessingTimerJob.cs" />
+    <Compile Include="EngagementsSAPSyncTimerJob.cs" />
+    <Compile Include="EngagementsDeputiesUpdateTimerJob.cs" />
+    <Compile Include="EngagementsServiceBusProcessingTimerJob.cs" />
+    <Compile Include="Features\EngagementsDeputiesUpdateTimerJobFeature\EngagementsDeputiesUpdateTimerJobFeature.EventReceiver.cs">
+      <DependentUpon>EngagementsDeputiesUpdateTimerJobFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\EngagementsServiceBusProcessingTimerJobFeature\EngagementsServiceBusProcessingTimerJobFeature.EventReceiver.cs">
+      <DependentUpon>EngagementsServiceBusProcessingTimerJobFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\EngagementsServiceBusProcessingTimerJobFeature\EngagementsServiceBusProcessingTimerJobFeature.feature">
+      <FeatureId>{db7ebb55-44a8-48e9-bd73-b91f3c462e50}</FeatureId>
+    </None>
+    <None Include="Features\EngagementsDeputiesUpdateTimerJobFeature\EngagementsDeputiesUpdateTimerJobFeature.feature">
+      <FeatureId>{18015223-ec34-4c57-99d6-088cb737b034}</FeatureId>
+    </None>
+    <None Include="AcmeCorpEngagements.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{c9321451-756e-4a5c-9e16-63f705bbc2bc}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Acme.Core\Acme.Core.MultiLanguageDb\Acme.Core.MultiLanguageDb.csproj">
+      <Project>{2dc71467-fc25-4207-9621-2611b18c6326}</Project>
+      <Name>Acme.Core.MultiLanguageDb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Acme.Core\Acme.Core\Acme.Core.csproj">
+      <Project>{5a9e55a8-dd15-4532-a292-65098a9789e0}</Project>
+      <Name>Acme.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Acme.Core\Acme.SharePointCore\Acme.SharePointCore.csproj">
+      <Project>{6bbc5e5e-6f86-440d-b4f3-695b26c66989}</Project>
+      <Name>Acme.SharePointCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02 BusinessLayer\EngagementsApi\EngagementsApi.csproj">
+      <Project>{d43ae348-cd69-45f3-9aa5-07e4fa0bb936}</Project>
+      <Name>EngagementsApi</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02 BusinessLayer\EngagementsDomain\EngagementsDomain.csproj">
+      <Project>{cd02009b-ab42-46f4-97ae-2757dd3f9136}</Project>
+      <Name>EngagementsDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02 BusinessLayer\EngagementsServiceBus\EngagementsServiceBus.csproj">
+      <Project>{63436bba-737d-4253-a530-4b0bafb5405d}</Project>
+      <Name>EngagementsServiceBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UiHelpers\ApiFactory\ApiFactory.csproj">
+      <Project>{9f6cc007-2ac8-4610-aa28-69c7cf39f24c}</Project>
+      <Name>ApiFactory</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\EngagementsServiceBusProcessingTimerJobFeature\EngagementsServiceBusProcessingTimerJobFeature.Template.xml">
+      <DependentUpon>EngagementsServiceBusProcessingTimerJobFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\EngagementsDeputiesUpdateTimerJobFeature\EngagementsDeputiesUpdateTimerJobFeature.Template.xml">
+      <DependentUpon>EngagementsDeputiesUpdateTimerJobFeature.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feature xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a3a32cf6-8195-41c0-a7fc-392f1244978a" alwaysForceInstall="true" description="Property Bag Settings help you to manage configuration information in SharePoint environment at all levels. This feature can only be enabled on a Central Admin site. - by Alon Havivi" featureId="13a32cf6-8195-41c0-a7fc-392f1244978a" imageUrl="" receiverAssembly="$SharePoint.Project.AssemblyFullName$" receiverClass="$SharePoint.Type.e27a5014-a70f-4969-8239-a1efdcf27b15.FullName$" scope="Farm" solutionId="00000000-0000-0000-0000-000000000000" title="Property Bag Settings" version="" deploymentPath="$SharePoint.Project.FileNameWithoutExtension$_$SharePoint.Feature.FileNameWithoutExtension$" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/FeatureModel">
+  <projectItems>
+    <projectItemReference itemId="de1b9697-bb56-4425-9077-3bfe010f1493" />
+  </projectItems>
+</feature>

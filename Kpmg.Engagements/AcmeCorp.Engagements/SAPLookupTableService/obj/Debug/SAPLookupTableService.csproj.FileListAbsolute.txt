@@ -1,0 +1,11 @@
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\obj\Debug\SAPLookupTableService.csprojResolveAssemblyReference.cache
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\bin\SAPLookupTableService.dll
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\bin\SAPLookupTableService.pdb
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\obj\Debug\SAPLookupTableService.dll
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\obj\Debug\SAPLookupTableService.pdb
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\bin\AcmeCorp.Engagements.EngagementsDomain.dll
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\bin\Acme.Core.dll
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\bin\AcmeCorp.Engagements.EngagementsDomain.pdb
+C:\Projects\AcmeCorp.Engagements\SAPLookupTableService\bin\Acme.Core.pdb
+c:\Projects\AcmeCorp.Engagements\SAPLookupTableService\bin\Telerik.Web.UI.dll
+c:\Projects\AcmeCorp.Engagements\SAPLookupTableService\bin\Telerik.Web.UI.xml

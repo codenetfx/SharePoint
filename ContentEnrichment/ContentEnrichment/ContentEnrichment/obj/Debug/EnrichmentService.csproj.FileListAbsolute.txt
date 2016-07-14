@@ -1,0 +1,5 @@
+C:\Projects\ContentEnrichment\ContentEnrichment\ContentEnrichment\bin\ContentEnrichment.dll
+C:\Projects\ContentEnrichment\ContentEnrichment\ContentEnrichment\bin\ContentEnrichment.pdb
+C:\Projects\ContentEnrichment\ContentEnrichment\ContentEnrichment\obj\Debug\EnrichmentService.csprojResolveAssemblyReference.cache
+C:\Projects\ContentEnrichment\ContentEnrichment\ContentEnrichment\obj\Debug\ContentEnrichment.dll
+C:\Projects\ContentEnrichment\ContentEnrichment\ContentEnrichment\obj\Debug\ContentEnrichment.pdb

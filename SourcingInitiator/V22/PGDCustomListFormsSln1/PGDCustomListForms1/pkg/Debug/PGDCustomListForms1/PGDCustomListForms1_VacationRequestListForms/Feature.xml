@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="ebe4aa4a-ebb6-4cb3-8043-04f82f567077" Scope="Web" Title="PGDCustomListForms1 VacationRequest List and Forms">
+  <ElementManifests>
+    <ElementManifest Location="VacationRequestInstance\Elements.xml" />
+    <ElementManifest Location="VacationRequest\Elements.xml" />
+    <ElementFile Location="VacationRequest\Schema.xml" />
+    <ElementFile Location="VacationRequest\customDispForm.aspx" />
+    <ElementFile Location="VacationRequest\customNewForm.aspx" />
+  </ElementManifests>
+</Feature>

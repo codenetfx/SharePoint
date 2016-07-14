@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="7988882d-93c7-4a24-8d44-0ca0126a33b5" solutionId="7988882d-93c7-4a24-8d44-0ca0126a33b5" resetWebServer="false" sharePointProductVersion="15.0" name="SourcingInitiatorWideList" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="7b4bf837-e156-4ff8-8e3c-fab9a52f4984" />
+    <featureReference itemId="618f90b4-91da-4df2-8c93-0014fa0bd59f" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="0f9d8edc-2c7c-4c87-9b87-5d9cb58f35e6" />
+  </projectItems>
+</package>

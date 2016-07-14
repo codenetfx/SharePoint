@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p1="urn:kpmg:eu:generic:basis:services" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="CustomTableRead_Outb" targetNamespace="urn:kpmg:eu:generic:basis:services" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_CustomTableReadQuery" />
+  <wsdl:types>
+    <xsd:schema xmlns="urn:kpmg:eu:generic:basis:services" targetNamespace="urn:kpmg:eu:generic:basis:services" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="CustomTableReadResponse" type="p1:CustomTableResponse" />
+      <xsd:element name="CustomTableReadQuery" type="p1:CustomTableQuery" />
+      <xsd:complexType name="CustomTableResponse">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">f47cb476bd6a11e29e9c00001ae301ce</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="TableName" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">39955e14b6f511e2c7b1028037ec0200</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Rows">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">39955e18b6f511e28641028037ec0200</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="Key" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">39955e15b6f511e2b30d028037ec0200</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="Language" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">39955e16b6f511e299f9028037ec0200</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="Value" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">39955e17b6f511e2a7bc028037ec0200</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="CustomTableQuery">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">ef174494bd6a11e2c2b200001ae301ce</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element name="TableName" type="xsd:string">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">39955e14b6f511e2c7b1028037ec0200</xsd:appinfo>
+            </xsd:annotation>
+          </xsd:element>
+          <xsd:element minOccurs="0" name="Language">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:length value="2" />
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="Rows">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">39955e18b6f511e28641028037ec0200</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="Key" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">39955e15b6f511e2b30d028037ec0200</xsd:appinfo>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CustomTableReadQuery">
+    <wsdl:documentation />
+    <wsdl:part name="CustomTableReadQuery" element="p1:CustomTableReadQuery" />
+  </wsdl:message>
+  <wsdl:message name="CustomTableReadResponse">
+    <wsdl:documentation />
+    <wsdl:part name="CustomTableReadResponse" element="p1:CustomTableReadResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CustomTableRead_Outb">
+    <wsdl:documentation />
+    <wsdl:operation name="CustomTableReadQuery">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_CustomTableReadQuery" />
+      </wsp:Policy>
+      <wsdl:input message="p1:CustomTableReadQuery" />
+      <wsdl:output message="p1:CustomTableReadResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CustomTableRead_OutbBinding" type="p1:CustomTableRead_Outb">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="CustomTableReadQuery">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CustomTableRead_OutbService">
+    <wsdl:port name="HTTP_Port" binding="p1:CustomTableRead_OutbBinding">
+      <address location="http://cix11.de.kworld.kpmg.com:54500/XISOAPAdapter/MessageServlet?senderParty=KPMG_DE&amp;senderService=BC_SharedDeliveryCenter_SOAP&amp;receiverParty=&amp;receiverService=BC_ProcessIntegration&amp;interface=CustomTableRead_Outb&amp;interfaceNamespace=urn%3Akpmg%3Aeu%3Ageneric%3Abasis%3Aservices" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:CustomTableRead_OutbBinding">
+      <address location="https://cix11.de.kworld.kpmg.com:54501/XISOAPAdapter/MessageServlet?senderParty=KPMG_DE&amp;senderService=BC_SharedDeliveryCenter_SOAP&amp;receiverParty=&amp;receiverService=BC_ProcessIntegration&amp;interface=CustomTableRead_Outb&amp;interfaceNamespace=urn%3Akpmg%3Aeu%3Ageneric%3Abasis%3Aservices" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
